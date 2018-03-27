@@ -121,6 +121,31 @@
     background: darken(#b8d532, 15%);
 }
 
+#sidebar footer {
+
+    margin: 0;
+    border-bottom: 1px dotted #2E2E2E;
+
+    p {
+        margin: 0;
+        font-size: 0.8em;
+        padding-left: 9px;
+        padding-bottom: 6px;
+        color: #e0e0e0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+
+
+     p:nth-child(3) {
+        padding-bottom: 17px;
+     }
+}
+
 #content {
     padding: 20px;
     min-height: 100vh;
@@ -177,10 +202,15 @@
         width: 100%;
     }
 
+        hr {
+            border: 0;
+            height: 1px;
+            border-bottom: 1px dotted #e0e0e0;
+        }
+
+
     .pins {
         .btn {
-
-            //padding: .6rem 1.5rem;
 
             img {
                 width: 100%;
@@ -193,25 +223,23 @@
         }
     }
 
-    .form-inline {
+    form {
+
+        label {
+            margin: 0;
+            font-size: 0.9em;
+            color: #757575;
+        }
         
-        div, input[type="text"], select {
+        div, input[type="text"], input[type="date"], input[type="time"], select {
             font-size: 1.2em;
             min-height: 53px;
             border-color: #bcdc97;
         }
 
-        /*
-        select {
-            //padding-top: 8px;
-        }
-        */
-
         .input-group-text {
             width: 60px;
-            //background-color: #8bc34a;
             font-weight: bold;
-            //text-align: right;
             color: #fff;
             border-color: lighten(#8bc34a, 20%);
         }
@@ -281,15 +309,16 @@
 
     .jumbotron {
 
-        .form-inline {
+        form {
 
-            div.input-group {
+            div.input-group, input[type="date"], input[type="time"], select, button {
                 width: 100%;
             }
-            
+            /*
             button {
                 width: 100%;
             }
+            */
             img {
                 margin: auto;
                 width: 22%;

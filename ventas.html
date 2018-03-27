@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CardLine - Movistar</title>
+    <title>CardLine - Ventas</title>
     <link rel="shortcut icon" href="img/angras.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -138,31 +138,96 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="jumbotron">
-                    <h4>Venta de productos</h4>
-                    <h5 class="card-title">Movistar</h5>
-                    <form class="form-inline" action="#">
-                        <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">0</div>
+                    <h4>Ventas</h4>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col col-md-3 col-12">
+                                <label>Fecha desde</label>
+                                <input type="date" name="fechai" id="fechai" class="form-control">
                             </div>
-                            <input type="text" name="cod_area" maxlength="4" class="form-control py-0" placeholder="Teléfono">
-                        </div>
-                        <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">15</div>
+                            <div class="col col-md-3 col-12">
+                                <label>Hora desde</label>
+                                <input type="time" name="horai" value="00:00" class="form-control">
                             </div>
-                            <input type="text" name="telefono" maxlength="8" class="form-control py-0">
-                        </div>
-                        <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">$</div>
+                            <div class="col col-md-3 col-12">
+                                <label>Fecha Hasta</label>
+                                <input type="date" name="fechaf" id="fechaf" class="form-control">
                             </div>
-                            <input type="text" name="monto" maxlength="4" class="form-control py-0" placeholder="Monto">
+                            <div class="col col-md-3 col-12">
+                                <label>Hora hasta</label>
+                                <input type="time" name="horaf" value="23:59" class="form-control">
+                            </div>
+                            <div class="col col-md-3 col-12">
+                                <label>Producto</label>
+                                <select name="producto" class="form-control">
+                                    <option value="">Todos</option>
+                                    <option value="1">Movistar</option>
+                                    <option value="2">Claro</option>
+                                    <option value="3">Personal</option>
+                                    <option value="8">Nextel</option>
+                                    <option value="17">Control 25</option>
+                                    <option value="19">Personal SMS15</option>
+                                    <option value="32">Gran DT</option>
+                                    <option value="35">DIRECTV Prepago</option>
+                                    <option value="40">paysafecard 50</option>
+                                    <option value="42">paysafecard 100</option>
+                                    <option value="44">paysafecard 200</option>
+                                    <option value="48">Veraz Terceros</option>
+                                    <option value="50">Veraz Pers. Ilim</option>
+                                    <option value="55">Perso SMS 25</option>
+                                    <option value="57">paysafecard 400</option>
+                                    <option value="64">Tuenti</option>
+                                    <option value="30">Nuestro</option>
+                                    <option value="78">Teletel 10</option>
+                                    <option value="82">paysafecard 800</option>
+                                    <option value="83">Paysafecard 1000</option>
+                                    <option value="92">Control 50</option>
+                                    <option value="85">Telefe</option>
+                                    <option value="96">Prestamo Wayni</option>
+                                    <option value="98">Cuota Wayni</option>
+                                    <option value="67">Edenor Prepago</option>
+                                    <option value="107">Atomica 20</option>
+                                    <option value="108">Personal  30</option>
+                                    <option value="109">Personal  40</option>
+                                    <option value="110">Personal  50</option>
+                                    <option value="113">Hable Mas 25</option>
+                                    <option value="115">Antina Basico</option>
+                                    <option value="117">Antina Peliculas</option>
+                                    <option value="119">Antina Adultos</option>
+                                    <option value="121">Antina HD Plus</option>
+                                    <option value="123">Antina Futbol</option>
+                                    <option value="125">Antina Deco Adic</option>
+                                    <option value="130">Extracción Cash</option>
+                                </select>
+                            </div>
+                            <div class="col col-md-3 col-12">
+                                <label>Estado</label>
+                                <select name="estado" class="form-control">
+                                    <option value="OK">Confirmadas</option>
+                                    <option value="RV">Anuladas</option>
+                                    <option value="PE">Pendientes</option>
+                                    <option value="">Todas</option></select>
+                                </select>
+                            </div>
+                            <div class="col col-md-3 col-12">
+                                <label>Vendedor</label>
+                                <input type="text" name="vendedor" class="form-control">
+                            </div>
+                            <div class="col col-md-3 col-12">
+                                <label>Linea</label>
+                                <input type="text" name="linea" class="form-control">
+                            </div>
+                            <div class="col col-md-3 col-12">
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" name="detallado" class="form-check-input" value="on">
+                                    <label>detallado</label>
+                                </div>
+                            </div>
+                            <div class="col col-12">
+                                <hr>
+                                <button class="btn btn-outline-default waves-effect" type="submit">Consultar<i class="fa fa-question ml-2"></i></button>
+                            </div>
                         </div>
-                        <div class="input-group mb-2 mr-sm-2">
-                            <button class="btn btn-outline-default waves-effect" type="submit">Enviar<i class="fa fa-dollar ml-2"></i></button>
-                        </div>
-                        <img src="http://servicios.virtualline.com.ar:280/clw/img/logos/provider_1.png" alt="">
                     </form>
                 </div>
             </div>
@@ -173,6 +238,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/mdb.min.js"></script>
+<script src="http://servicios.virtualline.com.ar:280/clw/jquery-ui-1.7.2/time/jquery.timeentry.min.js"></script>
 <script>
 $(function() {
     $('#sidebar-collapse').on('click', function() {
@@ -180,6 +246,8 @@ $(function() {
         $('#sidebar').toggleClass('active');
         $(this).toggleClass('active');
     });
+    document.getElementById('fechai').valueAsDate = new Date();
+    document.getElementById('fechaf').valueAsDate = new Date();
 });
 </script>
 </body>
