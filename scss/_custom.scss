@@ -51,15 +51,6 @@
     }
 }
 
-/*
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 30px 0;
-}
-*/
-
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -202,12 +193,11 @@
         width: 100%;
     }
 
-        hr {
-            border: 0;
-            height: 1px;
-            border-bottom: 1px dotted #e0e0e0;
-        }
-
+    hr {
+        border: 0;
+        height: 1px;
+        border-bottom: 1px dotted #e0e0e0;
+    }
 
     .pins {
         .btn {
@@ -225,33 +215,121 @@
 
     form {
 
-        label {
-            margin: 0;
-            font-size: 0.9em;
-            color: #757575;
-        }
-        
-        div, input[type="text"], input[type="date"], input[type="time"], select {
-            font-size: 1.2em;
-            min-height: 53px;
-            border-color: #bcdc97;
+        .form-check {
+            margin-top: 10px;
+            padding-left: 0;
         }
 
+        input[type="checkbox"], input[type="radio"]{
+            position: absolute;
+            right: 9000px;
+        }
+        /*Check box*/
+        input[type="checkbox"] + .label-text:before{
+            content: "\f096";
+            font-family: "FontAwesome";
+            speak: none;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing:antialiased;
+            width: 1em;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        input[type="checkbox"]:checked + .label-text:before{
+            content: "\f14a";
+            color: #00796b;
+            animation: effect 250ms ease-in;
+        }
+        input[type="checkbox"]:disabled + .label-text{
+            color: #aaa;
+        }
+        input[type="checkbox"]:disabled + .label-text:before{
+            content: "\f0c8";
+            color: #ccc;
+        }
+
+
+        label {
+            font-size: .8rem;
+            color: #757575;
+        }
+
+        ::placeholder {
+            color: #bdbdbd;
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #bdbdbd;
+            //font-weight: thin;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #bdbdbd;
+            //font-weight: thin;
+        }
+
+        /*
         .input-group-text {
-            width: 60px;
             font-weight: bold;
             color: #fff;
             border-color: lighten(#8bc34a, 20%);
+        }
+        */
+
+        input[type="text"], select {
+            color: #263238;
+        }
+
+        select {
+            border-color: #e0e0e0;
         }
 
         button {
             text-transform: uppercase;
         }
+    
+    }
 
-        img {
-            width: 10%;
+    form.vl-form {
+
+        div.input-group-prepend > span {
+            width: 60px;
+            //text-align: right;
+        }
+
+        span.input-group-text, input[type="text"], select {
+            font-size: 2.2em;
+        }
+
+        select {
+            min-height: 53px;
+        }
+
+        /*
+        div, input[type="text"], input[type="date"], input[type="time"], select {
+            font-size: 1.2em;
+            min-height: 53px;
+            border-color: #bcdc97;
+        }
+        */
+    }
+
+    form.vl-form2 {
+        label {
+            margin: 0;
+        }
+
+        input[type="text"], input[type="date"], input[type="time"] {
+            border-color: #e0e0e0;
         }
     }
+
 }
 
 .main div .msg {
@@ -310,18 +388,25 @@
     .jumbotron {
 
         form {
-
-            div.input-group, input[type="date"], input[type="time"], select, button {
-                width: 100%;
-            }
-            /*
             button {
                 width: 100%;
             }
-            */
+        }
+
+        form.vl-form {
+
+            span.input-group-text {
+                font-size: 1rem;
+            }
+
+            input[type="text"] {
+                font-size: 1rem;
+                color: #263238;
+            }
+
             img {
                 margin: auto;
-                width: 22%;
+                //width: 22%;
             }
         }
 

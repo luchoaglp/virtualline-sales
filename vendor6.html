@@ -140,30 +140,42 @@
                 <div class="jumbotron">
                     <h4>Venta de productos</h4>
                     <h5 class="card-title">Gran DT</h5>
-                    <form class="form-inline" action="#">
-                        <div class="input-group mb-2 mr-sm-2">
-                            <select name="cod_area" class="form-control">
-                                <option value="1">DNI</option>
-                                <option value="2">Cédula</option>
-                                <option value="3">LE</option>
-                            </select>
-                        </div>
-                        <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fa fa-address-card"></i></div>
+                    <form action="#" class="vl-form">
+                        <div class="row">
+                            <div class="col col-md-3 col-12">
+                                <label>Producto</label>
+                                <select name="cod_area" class="form-control">
+                                    <option value="1">DNI</option>
+                                    <option value="2">Cédula</option>
+                                    <option value="3">LE</option>
+                                </select>
                             </div>
-                            <input type="text" name="telefono" maxlength="8" class="form-control py-0" placeholder="Documento">
-                        </div>
-                        <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">$</div>
+                            <div class="col col-md-6 col-12">
+                                <div class="md-form input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text md-addon"><i class="fa fa-address-card"></i></span>
+                                    </div>
+                                    <input type="text" name="telefono" id="telefono" maxlength="4" class="form-control" placeholder="Documento">
+                                    <label>Documento</label>
+                                </div>
                             </div>
-                            <input type="text" name="monto" maxlength="4" class="form-control py-0" placeholder="Monto">
+                            <div class="col col-md-3 col-12">
+                                <div class="md-form input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text md-addon">$</span>
+                                    </div>
+                                    <input type="text" name="monto" maxlength="4" class="form-control" placeholder="Monto">
+                                    <label>Monto</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="input-group mb-2 mr-sm-2">
-                            <button class="btn btn-outline-default waves-effect" type="submit">Enviar<i class="fa fa-dollar ml-2"></i></button>
+                        <hr>
+                        <div class="row">
+                            <div class="col col-md-3 col-12">
+                                <button class="btn btn-outline-default waves-effect" type="submit">Enviar<i class="fa fa-dollar ml-2"></i></button>
+                            </div>
+                            <img src="http://servicios.virtualline.com.ar:280/clw/img/logos/provider_7.png" alt="">
                         </div>
-                        <img src="http://servicios.virtualline.com.ar:280/clw/img/logos/provider_7.png" alt="">
                     </form>
                 </div>
             </div>
@@ -176,6 +188,7 @@
 <script src="js/mdb.min.js"></script>
 <script>
 $(function() {
+    $('#telefono').focus();
     $('#sidebar-collapse').on('click', function() {
         $('.jumbotron').toggleClass('d-none');
         $('#sidebar').toggleClass('active');

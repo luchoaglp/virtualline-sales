@@ -139,7 +139,7 @@
             <div class="col-md-12">
                 <div class="jumbotron">
                     <h4>Ventas</h4>
-                    <form action="#">
+                    <form action="#" class="vl-form2">
                         <div class="row">
                             <div class="col col-md-3 col-12">
                                 <label>Fecha desde</label>
@@ -157,6 +157,8 @@
                                 <label>Hora hasta</label>
                                 <input type="time" name="horaf" value="23:59" class="form-control">
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col col-md-3 col-12">
                                 <label>Producto</label>
                                 <select name="producto" class="form-control">
@@ -217,12 +219,15 @@
                                 <label>Linea</label>
                                 <input type="text" name="linea" class="form-control">
                             </div>
-                            <div class="col col-md-3 col-12">
-                                <div class="form-check form-check-inline">
-                                    <input type="checkbox" name="detallado" class="form-check-input" value="on">
-                                    <label>detallado</label>
+                            <div class="col col-12">
+                                <div class="form-check">
+                                    <label>
+                                        <input type="checkbox" name="detallado" checked> <span class="label-text">Detallado</span>
+                                    </label>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col col-12">
                                 <hr>
                                 <button class="btn btn-outline-default waves-effect" type="submit">Consultar<i class="fa fa-question ml-2"></i></button>
