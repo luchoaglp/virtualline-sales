@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>CardLine - Administración de Vendedores</title>
+	<title>CardLine - Ticket</title>
 	<link rel="shortcut icon" href="img/angras.ico">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -92,10 +92,10 @@
 				</li>
 			</ul>
 			<footer>
-				<p>Powered by <a href="http://www.angras.com.ar/" target="_blank">Angras S.R.L &copy;</a> </p>
-				<p>Servidor: v4.12.22.2</p>
-				<p>Cliente: v3.7.1</p>
-			</footer>
+                <p>Powered by <a href="http://www.angras.com.ar/" target="_blank">Angras S.R.L &copy;</a> </p>
+                <p>Servidor: v4.12.22.2</p>
+                <p>Cliente: v3.7.1</p>
+            </footer>
 		</nav>
 		<div id="content">
 			<nav class="navbar navbar-expand-lg navbar-dark light-green">
@@ -138,40 +138,16 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="jumbotron">
-					<h4>Administración de Vendedores</h4>
-					<a href="#" class="btn btn-outline-default waves-effect">Agregar Vendedor<i class="fa fa-plus ml-2"></i></a>
-					<hr>
-					<table class="table table-sm table-bordered table-hover table-responsive-md">
-						<thead class="mdb-color default-color text-white">
-							<tr>
-								<th></th>
-								<th></th>
-								<th>ID</th>
-								<th>Nombre de Usuario</th>
-								<th>Nombre</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td></td>
-								<td></td>
-								<td>0000002</td>
-								<td>SUPERV</td>
-								<td>Supervisor</td>
-							</tr>
-							<tr>
-								<td class="text-center">
-									<a href="#" class="btn btn-sm btn-outline-warning waves-effect">Modificar<i class="fa fa-pencil ml-2"></i></a>
-								</td>
-								<td class="text-center">
-									<a href="#" class="btn btn-sm btn-outline-danger waves-effect">Eliminar<i class="fa fa-trash ml-2"></i></a>
-								</td>
-								<td>0004245</td>
-								<td>ramiro</td>
-								<td>ramiro</td>
-							</tr>
-						</tbody>
-					</table>
+					<h4>Ticket</h4>
+					<a id="link_prn" href="#">Imprimir</a>
+					<div class="row">
+						<div class="col">
+							<div id="id_prn" class="printable">
+		                		<pre class="printableTicket" style="width: 5cm;"><br>     CardLine S.R.L<br>________________________<br><br><br> - Info del Comercio -  <br><br>000000000020001         <br>LUCIO COLUNGA CARD LINE <br>     03/04/2018 10:15:52<br><br/>************************<br>SALDO  :         $ 12,00<br>COMIS  :          $ 2,55<br>************************<br/><br/>Cuit   :   30-70764819-4<br>Telef. :         4790819<br>Dir.   : 34 E 16 Y 17 N <br>Loc.   :        LA PLATA<br>G.Caja :      Automatica<br><br>________________________<br>
+		                		</pre>
+		        			</div>
+	        			</div>
+        			</div>
 				</div>
 			</div>
 		</div>
@@ -181,6 +157,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/mdb.min.js"></script>
+<script src="js/jquery.print.js"></script>
 <script>
 $(function() {
 	$('#sidebar-collapse').on('click', function() {
@@ -188,6 +165,11 @@ $(function() {
 		$('#sidebar').toggleClass('active');
 		$(this).toggleClass('active');
 	});
+	$("#link_prn").attr("href", "javascript:void(0);" ).click(
+	 	function() {
+	 		$(".printable").print();
+	 		return(false);
+	 	});
 });
 </script>
 </body>
