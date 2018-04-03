@@ -6,7 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>CardLine - Ticket</title>
 	<link rel="shortcut icon" href="img/angras.ico">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/mdb.css" rel="stylesheet">
 </head>
@@ -76,7 +76,7 @@
 						<li><a href="ventas.html">Ventas</a></li>
 						<li><a href="#">Caja del Día</a></li>
 						<li><a href="#">Transacción</a></li>
-						<li><a href="#">Ultimas Transacciones</a></li>
+						<li><a href="txns.html">Ultimas Transacciones</a></li>
 						<li><a href="#">Último Ticket</a></li>
 						<li><a href="#">Importes a Facturar</a></li>
 						<li><a href="#">Otras Consultas</a></li>
@@ -92,7 +92,7 @@
 				</li>
 			</ul>
 			<footer>
-                <p>Powered by <a href="http://www.angras.com.ar/" target="_blank">Angras S.R.L &copy;</a> </p>
+                <p>Powered by <a href="http://www.angras.com.ar/" target="_blank">Angras S.R.L &copy;</a></p>
                 <p>Servidor: v4.12.22.2</p>
                 <p>Cliente: v3.7.1</p>
             </footer>
@@ -139,7 +139,8 @@
 			<div class="col-md-12">
 				<div class="jumbotron">
 					<h4>Ticket</h4>
-					<a id="link_prn" href="#">Imprimir</a>
+					<a href="#" id="link_prn" class="btn btn-outline-default waves-effect">Imprimir<i class="fa fa-print ml-2"></i></a>
+					<hr>
 					<div class="row">
 						<div class="col">
 							<div id="id_prn" class="printable">
@@ -165,11 +166,10 @@ $(function() {
 		$('#sidebar').toggleClass('active');
 		$(this).toggleClass('active');
 	});
-	$("#link_prn").attr("href", "javascript:void(0);" ).click(
-	 	function() {
-	 		$(".printable").print();
-	 		return(false);
-	 	});
+	$("#link_prn").attr("href", "javascript:void(0);").click(function() {
+	 	$(".printable").print();
+	 	return(false);
+	 });
 });
 </script>
 </body>

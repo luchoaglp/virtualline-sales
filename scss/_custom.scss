@@ -191,11 +191,12 @@
         border-bottom: 1px dotted #e0e0e0;
     }
 
-    /*
-    .btn-rounded {
-        border-radius: 10em;
+    table {
+        thead tr th {
+            font-weight: bold;
+        }
     }
-    */
+
     .pins {
         .btn {
 
