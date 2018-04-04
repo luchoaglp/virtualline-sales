@@ -79,7 +79,7 @@
 						<li><a href="txns.html">Ultimas Transacciones</a></li>
 						<li><a href="#">Último Ticket</a></li>
 						<li><a href="#">Importes a Facturar</a></li>
-						<li><a href="#">Otras Consultas</a></li>
+						<li><a href="otras.html">Otras Consultas</a></li>
 					</ul>
 				</li>
 				<li>
@@ -127,17 +127,15 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="row main">
+		<div class="row" id="main">
 			<div class="col-md-8">
 				<div class="msg msg-warning">Nuevo monto minimo para DirecTv $170. Solicite SUBE a su Distribuidor</div>
 			</div>
 			<div class="col-md-4">
 				<div class="msg msg-success">Saldo: $87.0</div>
 			</div>
-		</div>
-		<div class="row">
 			<div class="col-md-12">
-				<div class="jumbotron">
+				<div class="jumbotron" aria-hidden="true">
 					<h4>Bienvenido a la Plataforma Multipropósito de CardLine S.R.L. &copy;</h4>
 					<div class="msg msg-info">
 						Si tiene dudas acerca de sus obligaciones como usuario de este sitio por favor lea nuestros <a href="legal.html">Términos y Condiciones</a>.
@@ -148,7 +146,7 @@
 					<div class="msg msg-warning">
 						<b>Recuerde!</b> si una recarga no se acredita en el teléfono de su cliente, verifique con el número de transacción el estadode la misma desde la <a href="/clw/consultas/txn.do">Consulta de Transacción</a>  o desde la <a href="/clw/consultas/txns.do">Consulta de últimas Transacciones</a>.
 					</div>
-					<button class="btn btn-outline-default waves-effect form-control" type="submit">CONSULTAR PROMOCIONES<i class="fa fa-dollar ml-2"></i></button>
+					<button class="btn btn-outline-default waves-effect form-control" type="submit">CONSULTAR PROMOCIONES<i class="fa fa-certificate ml-2"></i></button>
 				</div>
 			</div>
 		</div>
@@ -161,7 +159,7 @@
 <script>
 $(function() {
 	$('#sidebar-collapse').on('click', function() {
-		$('.jumbotron').toggleClass('d-none');
+		$('#main').toggleClass('d-none');
 		$('#sidebar').toggleClass('active');
 		$(this).toggleClass('active');
 	});

@@ -73,7 +73,7 @@ $border-radius-base:          .125rem !default;
 $border-radius-circle:        50% !default;
 
 // Buttons
-$btn-margin-basic:            .375rem !default;
+$btn-margin-basic:            .375rem 0 !default; // Modified
 $btn-padding-y-basic:         .84rem !default;
 $btn-padding-x-basic:         2.14rem !default;
 $btn-font-size-basic:         .81rem !default;

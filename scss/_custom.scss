@@ -135,6 +135,7 @@
     transition: all 0.3s;
     width: 100%;
     overflow: hidden;
+    //background-color: lighten(#f0f4c3, 3%);
 }
 
 #sidebar-collapse {
@@ -252,7 +253,7 @@
         }
 
         label {
-            font-size: .8rem;
+            font-size: 1rem;
             color: #757575;
         }
 
@@ -346,12 +347,12 @@
 
 }
 
-.main div .msg {
+#main div .msg {
     margin-left: 0;
     margin-right: 0;
 }
 
-.main div:nth-child(2) .msg {
+#main div:nth-child(2) .msg {
     float: right;
 }
 
@@ -388,14 +389,14 @@
     #sidebar-collapse.active span:last-of-type {
         transform: rotate(-45deg) translate(1px, -1px);
     }
-    .main div .btn {
+    #main div .btn {
         font-size: 0.8em;
     }
-    .main div:nth-child(2) .btn {
+    #main div:nth-child(2) .btn {
         float: left;
     }
 
-    .main div:nth-child(1) .msg {
+    #main div:nth-child(1) .msg {
         width: 100%;
     }
 
