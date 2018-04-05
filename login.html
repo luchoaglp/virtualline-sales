@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>CardLine - Login</title>
+	<link rel="shortcut icon" href="img/angras.ico">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper-login">
+		<nav id="sidebar-login">
+			<div class="sidebar-header"><a href="http://www.cardlinesrl.com" target="_blank"><img src="img/cardline.gif" alt="CardLine"></a></div>
+			<div class="sidebar-content"></div>
+			<footer>
+				<p>Powered by <a href="http://www.angras.com.ar/" target="_blank">Angras S.R.L &copy;</a></p>
+				<p>Servidor: v4.12.22.2</p>
+				<p>Cliente: v3.7.1</p>
+			</footer>
+		</nav>
+		<div id="content-login">
+			<div class="row" id="main-login">
+				<div class="col-md-12">
+					<h4>Bienvenido a la Plataforma Multipropósito de CardLine S.R.L. &copy;</h4>
+					<div class="jumbotron">
+						<div class="col-md-6 offset-md-3">
+							<div class="card card-cascade">
+								<div class="view gradient-card-header green-gradient">
+									<h2 class="h2-responsive">Login</h2>
+								</div>
+								<div class="card-body">
+									<form action="index.html" method="post">
+										<div class="md-form">
+											<i class="fa fa-user prefix"></i>
+											<input type="text" name="v_user" id="v_user" maxlength="6" class="form-control">
+											<label>Vendedor</label>
+										</div>
+										<div class="md-form">
+											<i class="fa fa-lock prefix"></i>
+											<input type="password" maxlength="20" class="form-control">
+											<label for="materialFormLoginPasswordEx">Password</label>
+										</div>
+										<div class="md-form">
+											<i class="fa fa-map-marker prefix"></i>
+											<input type="number" max="99999" class="form-control">
+											<label>Comercio</label>
+										</div>
+										<div class="form-check">
+			                                <label>
+			                                    <input type="checkbox" name="detallado" checked> <span class="label-text">Declaro aceptar los <a href="legal.html">Términos y Condiciones</a>.</span>
+			                                </label>
+			                            </div>
+										<div class="text-center mt-4">
+											<button class="btn btn-outline-default waves-effect" type="submit">Ingresar<i class="fa fa-sign-in ml-2"></i></button>
+										</div>
+									</form>
+									<div class="msg msg-danger">
+										<ul>
+											<li>[58] Terminal invalida</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mdb.min.js"></script>
+<script>
+$(function() {
+	$('#v_user').focus();
+});
+</script>
+</body>
+</html>
