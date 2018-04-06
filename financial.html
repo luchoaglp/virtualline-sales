@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CardLine - Gran DT</title>
+    <title>CardLine - Productos Financieros</title>
     <link rel="shortcut icon" href="img/angras.ico">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -129,39 +129,23 @@
                 <div class="col-md-8">
                     <div class="msg msg-warning">Nuevo monto minimo para DirecTv $170. Solicite SUBE a su Distribuidor</div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-12">
                     <div class="msg msg-success">Saldo: $87.0</div>
+                    <div id="mensaje" class="msg msg-danger-dark">Hay nuevas recargas anuladas!. Verifíquelas <a href="txns.html">aquí</a></div>
                 </div>
                 <div class="col-md-12">
                     <div class="jumbotron">
-                        <h4>Venta de productos</h4>
-                        <h5 class="card-title">Gran DT</h5>
+                        <h4>Productos Financieros</h4>
+                        <h5 class="card-title">Edenor Prepago</h5>
                         <form action="#" class="vl-form">
                             <div class="row">
-                                <div class="col col-md-3 col-12">
-                                    <label>Producto</label>
-                                    <select name="cod_area" class="form-control">
-                                        <option value="1">DNI</option>
-                                        <option value="2">Cédula</option>
-                                        <option value="3">LE</option>
-                                    </select>
-                                </div>
-                                <div class="col col-md-6 col-12">
+                                <div class="col col-md-8 col-12">
                                     <div class="md-form input-group mb-3">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text md-addon"><i class="fa fa-address-card"></i></span>
                                         </div>
-                                        <input type="text" name="telefono" id="telefono" maxlength="4" class="form-control" placeholder="Documento">
-                                        <label>Documento</label>
-                                    </div>
-                                </div>
-                                <div class="col col-md-3 col-12">
-                                    <div class="md-form input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text md-addon">$</span>
-                                        </div>
-                                        <input type="text" name="monto" maxlength="4" class="form-control" placeholder="Monto">
-                                        <label>Monto</label>
+                                        <input type="number" name="dni" id="dni" maxlength="20" class="form-control" placeholder="Identificación">
+                                        <label>Identificación</label>
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +154,7 @@
                                 <div class="col col-md-3 col-12">
                                     <button class="btn btn-outline-default waves-effect" type="submit">Enviar<i class="fa fa-dollar ml-2"></i></button>
                                 </div>
-                                <img src="http://servicios.virtualline.com.ar:280/clw/img/logos/provider_7.png" alt="">
+                                <img src="http://servicios.virtualline.com.ar:280/clw/img/logos/provider_11.png" alt="">
                             </div>
                         </form>
                     </div>
@@ -184,13 +168,13 @@
 <script src="js/mdb.min.js"></script>
 <script>
 $(function() {
-    $('#telefono').focus();
-        $('#sidebar-collapse').on('click', function() {
-            $('#main').toggleClass('d-none');
-            $('#sidebar').toggleClass('active');
-            $(this).toggleClass('active');
-        });
+    $('#dni').focus();
+    $('#sidebar-collapse').on('click', function() {
+        $('#main').toggleClass('d-none');
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
     });
+});
 </script>
 </body>
 </html>
