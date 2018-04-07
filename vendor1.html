@@ -145,7 +145,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text md-addon">0</span>
                                     </div>
-                                    <input type="text" name="cod_area" id="area" maxlength="4" class="form-control" placeholder="Area">
+                                    <input type="text" name="cod_area" id="area" maxlength="4" class="form-control" placeholder="Area" autofocus>
                                     <label>Area</label>
                                 </div>
                             </div>
@@ -187,7 +187,6 @@
 <script src="js/mdb.min.js"></script>
 <script>
 $(function() {
-    $('#area').focus();
     $('#sidebar-collapse').on('click', function() {
         $('#main').toggleClass('d-none');
         $('#sidebar').toggleClass('active');

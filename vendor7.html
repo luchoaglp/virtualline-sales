@@ -146,7 +146,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text md-addon"><i class="fa fa-barcode"></i></span>
                                     </div>
-                                    <input type="text" name="telefono" id="telefono" maxlength="20" class="form-control" placeholder="Código">
+                                    <input type="text" name="telefono" id="telefono" maxlength="20" class="form-control" placeholder="Código" autofocus>
                                     <label>Código</label>
                                 </div>
                             </div>
@@ -179,7 +179,6 @@
 <script src="js/mdb.min.js"></script>
 <script>
 $(function() {
-    $('#telefono').focus();
     $('#sidebar-collapse').on('click', function() {
         $('#main').toggleClass('d-none');
         $('#sidebar').toggleClass('active');

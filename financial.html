@@ -144,7 +144,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text md-addon"><i class="fa fa-address-card"></i></span>
                                         </div>
-                                        <input type="number" name="dni" id="dni" maxlength="20" class="form-control" placeholder="Identificación">
+                                        <input type="number" name="dni" id="dni" maxlength="20" class="form-control" placeholder="Identificación" autofocus>
                                         <label>Identificación</label>
                                     </div>
                                 </div>
@@ -168,7 +168,6 @@
 <script src="js/mdb.min.js"></script>
 <script>
 $(function() {
-    $('#dni').focus();
     $('#sidebar-collapse').on('click', function() {
         $('#main').toggleClass('d-none');
         $('#sidebar').toggleClass('active');

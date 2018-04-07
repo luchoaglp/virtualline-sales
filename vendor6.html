@@ -151,7 +151,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text md-addon"><i class="fa fa-address-card"></i></span>
                                         </div>
-                                        <input type="text" name="telefono" id="telefono" maxlength="4" class="form-control" placeholder="Documento">
+                                        <input type="text" name="telefono" id="telefono" maxlength="4" class="form-control" placeholder="Documento" autofocus>
                                         <label>Documento</label>
                                     </div>
                                 </div>
@@ -184,13 +184,12 @@
 <script src="js/mdb.min.js"></script>
 <script>
 $(function() {
-    $('#telefono').focus();
-        $('#sidebar-collapse').on('click', function() {
-            $('#main').toggleClass('d-none');
-            $('#sidebar').toggleClass('active');
-            $(this).toggleClass('active');
-        });
+    $('#sidebar-collapse').on('click', function() {
+        $('#main').toggleClass('d-none');
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
     });
+});
 </script>
 </body>
 </html>
