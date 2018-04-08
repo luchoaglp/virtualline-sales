@@ -23,12 +23,13 @@
 }
 
 #sidebar-login .sidebar-content {
-    min-height: 392px;
+    min-height: 432px;
 }
 
 #sidebar-login footer {
 
-    margin: 0;
+    //margin: 0;
+    padding: 14px 0 13px 0;
     border-bottom: 1px dotted #2E2E2E;
     border-top: 1px dotted #2E2E2E;
 
@@ -45,13 +46,14 @@
             text-decoration: underline;
         }
     }
-
+    /*
     p:first-child {
         padding-top: 16px;
     }
     p:nth-child(3) {
         padding-bottom: 16px;
     }
+    */
 }
 
 #content-login {
@@ -188,7 +190,7 @@
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    padding: 12px 0;
     border-bottom: 1px dotted #2E2E2E;
 }
 
@@ -203,7 +205,7 @@
 }
 
 #sidebar ul.components li a:hover {
-    color: #fff;
+    //color: #fff;
     background: #00796b;
 }
 
@@ -214,7 +216,9 @@
 
 #sidebar footer {
 
-    margin: 0;
+    padding-bottom: 13px;
+
+    //margin: 0;
     border-bottom: 1px dotted #2E2E2E;
 
     p {
@@ -230,7 +234,7 @@
             text-decoration: underline;
         }
     }
-
+    /*
     p:first-child {
         padding-top: 13px;
     }
@@ -238,13 +242,15 @@
     p:nth-child(3) {
         padding-bottom: 13px;
     }
+    */
 }
 
 #sidebar {
     aside {
-        margin: 0;
+        //margin: 0;
         padding-left: 9px;
-        padding-bottom: 0;
+        //padding-bottom: 0;
+        margin-bottom: 13px;
         border-bottom: 1px dotted #2E2E2E;
 
         a {
