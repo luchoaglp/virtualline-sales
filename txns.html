@@ -276,6 +276,7 @@
 $(function() {
 	$('#sidebar-collapse').on('click', function() {
 		$('#main').toggleClass('d-none');
+		$('.navbar-toggler-icon').toggleClass('d-none');
 		$('#sidebar').toggleClass('active');
 		$(this).toggleClass('active');
 	});
