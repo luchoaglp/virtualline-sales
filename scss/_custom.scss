@@ -66,7 +66,7 @@
         margin-bottom: 18px;
     }
     .form-check {
-        margin-top: 20px;
+        margin-top: 23px;
     }
     a {
         text-decoration: underline;
@@ -92,7 +92,8 @@
 /* END LOGIN STUFF */
 
 .navbar {
-    margin-bottom: 12px;
+    margin-bottom: .375rem;;
+    background-color: #8bc34a;
 }
 
 .navbar-btn {
@@ -105,7 +106,7 @@
 .msg {
     padding: 7px;
     font-size: 1em;
-    margin: .175rem 0 .475rem 0;
+    margin-bottom: .375rem;
     border: 0;
     border-radius: .125rem;
     white-space: normal;
@@ -242,7 +243,6 @@
 #sidebar {
     aside {
         margin: 0;
-        //font-size: 0.8em;
         padding-left: 9px;
         padding-bottom: 0;
         border-bottom: 1px dotted #2E2E2E;
@@ -281,7 +281,7 @@
     margin: 0 auto;
     display: block;
     background: #fff;
-    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition: all 0.2s cubic-bezier(0.810, -0.330, 0.345, 1.375);
     transition-delay: 0.2s;
 }
 
@@ -299,7 +299,7 @@
 
     h4 {
         border-bottom: 1px dotted #e0e0e0;
-        margin-bottom: 18px;
+        margin-bottom: 10px;
     }
 
     h5 {
