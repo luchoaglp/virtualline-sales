@@ -157,6 +157,10 @@
     background-color: #ff4444;
 }
 
+.errors {
+    margin-top: 20px;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -507,6 +511,12 @@
 
     #sidebar-login footer {
         display: none;
+    }
+
+    #main-login {
+        .jumbotron {
+            padding: 1rem 0;
+        }
     }
 
     /* END LOGIN STUFF */
