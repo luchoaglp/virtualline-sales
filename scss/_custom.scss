@@ -166,7 +166,7 @@
 ----------------------------------------------------- */
 .wrapper {
     display: flex;
-    align-items: stretch;
+    //align-items: stretch;
     //perspective: 1500px;
 }
 
@@ -272,7 +272,7 @@
 #content {
     padding: 20px;
     min-height: 100vh;
-    transition: all 0.3s;
+    /*transition: all 0.3s;*/
     width: 100%;
     overflow: hidden;
 }
